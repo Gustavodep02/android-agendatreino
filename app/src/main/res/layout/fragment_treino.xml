@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentTreino"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TreinoFragment">
+
+    <Spinner
+        android:id="@+id/spDiaTre"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/etSeriesTre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnExcluirTre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/excluir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvListarTre" />
+
+    <Button
+        android:id="@+id/btnInserirTre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/inserir"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarTre"
+        app:layout_constraintEnd_toStartOf="@+id/btnModificarTre" />
+
+    <Button
+        android:id="@+id/btnModificarTre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="@string/modificar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnInserirTre"
+        app:layout_constraintEnd_toEndOf="@+id/tvListarTre" />
+
+    <EditText
+        android:id="@+id/etSeriesTre"
+        android:layout_width="349dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="@string/series"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etRepsTre"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:hint="@string/reps"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSeriesTre" />
+
+    <TextView
+        android:id="@+id/tvTituloTre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/treino"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spExTre"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etSeriesTre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spDiaTre" />
+
+    <TextView
+        android:id="@+id/tvListarTre"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirTre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

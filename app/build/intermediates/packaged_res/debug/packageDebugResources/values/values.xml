@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Agenda de Treinos</string>
+    <string name="azzz">Cadastrar Novo Exercicio</string>
+    <string name="buscar">Buscar</string>
+    <string name="codigo">Codigo</string>
+    <string name="descricao">Descricao</string>
+    <string name="excluir">Excluir</string>
+    <string name="exercicio">Exercicio</string>
+    <string name="grupo">Grupo Muscular</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inserir">Inserir</string>
+    <string name="lista">Lista</string>
+    <string name="listar">Listar</string>
+    <string name="modificar">Modificar</string>
+    <string name="nome">Nome</string>
+    <string name="reps">Repeticoes</string>
+    <string name="series">Series</string>
+    <string name="treino">Treino</string>
+    <string name="treinolista">Lista de treinos</string>
+    <style name="Base.Theme.AgendaTreino" parent="Theme.Material3.DayNight">
+        
+        
+    </style>
+    <style name="Theme.AgendaTreino" parent="Base.Theme.AgendaTreino"/>
+</resources>
